@@ -9,14 +9,14 @@ This project implements an efficient solver for the 3×3 Rubik’s Cube based on
 - Extendable to support 2x2, 4x4, and more
    ## 📚 What is Kociemba's Algorithm?
 Kociemba's Two-Phase Algorithm breaks the solution into:
-### ✅ Phase 1:  
+### Phase 1:  
 Transform the cube into a special subset (the **G1 group**) where:
 - All edges are oriented
 - The middle layer edges are in the middle layer
-### ✅ Phase 2:  
+### Phase 2:  
 From that subset, it moves the cube into the **solved state** using allowed moves in a limited move set.
 This design reduces search space significantly, often solving in under **20 moves**.
-## 🧠 Data Structures Used
+## Data Structures Used
 - **String**: To represent cube state (54-char string: `URFDLB`)
 - **Hash Tables**: For pruning tables and fast lookups
 - **Arrays**: To represent facelets, corner/edge orientation and permutations
